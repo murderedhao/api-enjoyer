@@ -6,7 +6,7 @@ import MenPage from '../pages/MenPage'
 import WomenPage from '../pages/WomenPage'
 const AppRoutes = () => {
 	return ( 
-		<Routes>
+<Routes>
 	<Route index element={<HomePage />} />
 	<Route path='/catalog' element={<CatalogPage />} />
 	<Route path='/men' element={<MenPage />} />
