@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+	box-sizing: border-box;
+	margin-right: 200px;
+	margin-left: 200px;
+	margin-top: 50px;
+	align-content: center;
+	justify-content: space-around;
+	background-color: gainsboro;
+	gap: 30px;
+	flex-wrap: wrap;
+}
+.form .search__form input {
+	display: flex;
+	width: 1505px;
+	height: 50px;
+	font-size: 40px;
+	margin-left: 200px;
+	margin-top: 100px;
+}
+.search__form {
+	display: flex;
+	font-size: 32px;
+}
