@@ -13,7 +13,6 @@ const СatalogPage = () => {
 
 	useEffect(()=> {
 			setArticles(data())
-			console.log(data())
 			}, [])
 const lastArticleIndex = currentPage * articlesPerPage
 const firstArticleIndex = lastArticleIndex - articlesPerPage

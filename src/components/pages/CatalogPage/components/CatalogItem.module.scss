@@ -1,5 +1,10 @@
-.item {
+.item__data {
 	display: inline-block;
 	flex-wrap: wrap;
 	height: 500px;
+}
+.item__img {
+	width: 297px; 
+	height: 320px;
+	border-radius: 25px;
 }

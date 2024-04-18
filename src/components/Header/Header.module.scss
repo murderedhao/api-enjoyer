@@ -6,11 +6,11 @@
 	justify-content: left;
 	align-items: left;
 	padding-left: 100px;
-	.div {
+	.header__menu__list {
 		display: flex;
 		align-items: center;
 		margin: 0, auto;
-		a {
+		.header__menu__item {
 			text-decoration: none;
 			list-style-type: none;
 			margin-left: 50px;
