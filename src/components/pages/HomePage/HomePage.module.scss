@@ -1,0 +1,57 @@
+.main__content {
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+	margin-left: 200px;
+	margin-right: 200px;
+}
+.welcome {
+	display: flex;
+	justify-content: center;
+	box-sizing: border-box;
+	border-radius: 70px;
+	background-color: gainsboro;
+}
+.welcome__title {
+	font-family: "Poppins", sans-serif;
+  font-weight: 500;
+	font-size: 32px;
+}
+.clothes {
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: gainsboro;
+	margin-top: 50px;
+}
+.clothes__title {
+	font-family: "Poppins", sans-serif;
+  font-weight: 500;
+	margin-left: 20px;
+	font-size: 24px;
+}
+.clothes__example {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+.discription {
+	margin-top: 50px;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	border-radius: 10px;
+	background-color: gainsboro;
+}
+.discription__subtitle {
+	font-family: "Poppins", sans-serif;
+  font-weight: 300;
+	font-size: 24px;
+	margin-left: 10px;
+}
+.discription__cta {
+	font-family: "Poppins", sans-serif;
+  font-weight: 500;
+	margin-left: 20px;	
+	color: black;
+	font-size: 20px;
+}
