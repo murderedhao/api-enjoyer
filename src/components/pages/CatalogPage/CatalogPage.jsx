@@ -28,7 +28,7 @@ const paginate = pageNumber => setCurrentPage(pageNumber)
 	return (
 		<>
 			<form className={styles.form}>
-				<div className={styles.search__form}>
+				<div id="search" className={styles.search__form}>
 					<input 
 						type='text'
 						placeholder='Store search'

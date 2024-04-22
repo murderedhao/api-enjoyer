@@ -1,19 +1,21 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
+import { scrollToSearch } from '../../../../service/service'
 import styles from './Pagination.module.scss'
 const Pagination = ({articlesPerPage, totalArticles, paginate, currentPage}) => {
 	const pageNumbers = []
 	for(let i = 1; i <= Math.ceil(totalArticles / articlesPerPage); i++) {
 		pageNumbers.push(i)
 	}
-	const [disableButton, setButton] = useState(false)
 	useEffect(() => {
-		(currentPage === 1) ? setButton(true) : setButton(false)
+		scrollToSearch()
 	}, [currentPage])
 	return ( 
-
 		<div>
 			<ul className={styles.pagination}>
-				<button className={styles.previousPage} hidden={disableButton} onClick={() => paginate(currentPage - 1)}>
+				<button className={styles.previousPage} hidden={currentPage === 1} onClick={() => {
+					paginate(currentPage - 1)
+					}}
+					>
 					PreviousPage
 				</button>
 				{
@@ -25,7 +27,8 @@ const Pagination = ({articlesPerPage, totalArticles, paginate, currentPage}) => 
 						</li>
 					))
 				}
-				<button className={styles.nextPage} onClick={() => paginate(currentPage + 1)}>
+				<button className={styles.nextPage} onClick={() => {
+					paginate(currentPage + 1)}}>
 					NextPage
 				</button>
 			</ul>
