@@ -1,19 +1,47 @@
-.item__data {
+.item {
 	display: inline-block;
 	flex-wrap: wrap;
+	width: 297px;
 	height: 500px;
 }
+.item__title {
+	width: 297px;
+	height: 60px;
+}
 .item__img {
-	width: 297px; 
+	width: 297px;
 	height: 320px;
 	border-radius: 25px;
 	margin-top: 20px;
 }
-.item__data-btn {
+.item__buttons {
 	display: flex;
 	.item__button {
+		background-color: black;
+		margin-right: 10px;
+		border: none;
+		border-radius: 10px;
 		width: 50px;
 		height: 50px;
+		cursor: pointer;
+		.item__buttonImage {
+			padding-right: 1px;
+			width: 25px;
+			height: 25px;
+		}
 	}
 }
-
+.item__price {
+	display: flex;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+	border-radius: 10px;
+	color: white;
+	margin-right: 10px;
+	width: 177px;
+	background-color: black;
+}
+.item__button:last-child {
+	margin-right: 0;
+}

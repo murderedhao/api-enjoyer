@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { data } from '../../../service/service'
 import styles from './CatalogPage.module.scss'
 import CatalogItem from './components/CatalogItem'
