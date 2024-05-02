@@ -1,0 +1,33 @@
+.container {
+	box-sizing: border-box;
+	background-color: gainsboro;
+	margin-top: 35px;
+	margin-left: 200px;
+	margin-right: 200px;
+	padding: 30px;
+	border-radius: 30px;
+}
+.container__head {
+	margin-bottom: 30px;
+	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+}
+.container__item {
+	box-sizing: border-box;
+	background-color: rgb(29, 28, 28);
+	border-radius: 30px;
+	padding-left: 100px;
+	margin-bottom: 20px;
+}
+.container__img {
+	width: 297px;
+	height: 320px;
+	border-radius: 30px;
+	margin-top: 25px;
+}
+.container__title {
+	width: 297px;
+	height: 60px;
+	color: white;
+}
