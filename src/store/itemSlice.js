@@ -13,6 +13,9 @@ const itemSlice = createSlice({
 			state.transactions.items.push(action.payload)
 			alert('Your product has been added to the cart')
 		},
+		removeItem(state) {
+			state.items.pop()
+		},
 	},
 })
 export const { addItem, removeItem } = itemSlice.actions

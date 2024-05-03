@@ -15,6 +15,11 @@ const MyCartPage = () => {
 						alt={`Item ${index}`}
 					/>
 					<p className={styles.container__title}>{item.title}</p>
+					<div className={styles.container__buttons}>
+						<button className={styles.container__buttondel}>
+							delete this item
+						</button>
+					</div>
 				</div>
 			))}
 		</div>

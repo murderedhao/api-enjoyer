@@ -14,20 +14,32 @@
 	font-size: 32px;
 }
 .container__item {
+	display: flex;
 	box-sizing: border-box;
+	flex-direction: row;
 	background-color: rgb(29, 28, 28);
 	border-radius: 30px;
 	padding-left: 100px;
+	padding: 30px;
 	margin-bottom: 20px;
 }
 .container__img {
 	width: 297px;
 	height: 320px;
 	border-radius: 30px;
-	margin-top: 25px;
 }
 .container__title {
-	width: 297px;
+	display: flex;
+	align-items: center;
+	padding-left: 30px;
+	width: 900px;
 	height: 60px;
 	color: white;
+}
+.container__buttons {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	width: 70px;
+	height: 70px;
 }
