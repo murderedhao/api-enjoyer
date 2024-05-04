@@ -13,8 +13,10 @@ const itemSlice = createSlice({
 			state.transactions.items.push(action.payload)
 			alert('Your product has been added to the cart')
 		},
-		removeItem(state) {
-			state.items.pop()
+		removeItem(state, action) {
+			state.transactions.items = state.transactions.items.filter(
+				item => item.id !== action.payload
+			)
 		},
 	},
 })
