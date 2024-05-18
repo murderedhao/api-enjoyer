@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import cart from '../../../../assets/cart.png'
 import favorite from '../../../../assets/favorite.png'
 import { addItem } from '../../../../store/itemSlice'
+import { addFavorite } from '../../../../store/itemSliceFavorite'
 import styles from './CatalogItem.module.scss'
 const CatalogItem = ({ Itemdata }) => {
 	const dispatch = useDispatch()
@@ -18,7 +19,10 @@ const CatalogItem = ({ Itemdata }) => {
 				>
 					<img className={styles['item__buttonImage']} src={cart} alt='' />
 				</button>
-				<button className={styles['item__button']}>
+				<button
+					onClick={() => dispatch(addFavorite(Itemdata))}
+					className={styles['item__button']}
+				>
 					<img className={styles['item__buttonImage']} src={favorite} alt='' />
 				</button>
 			</div>

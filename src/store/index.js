@@ -11,6 +11,7 @@ import {
 } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import itemSlice from './itemSlice'
+import itemSliceFavorite from './itemSliceFavorite'
 
 const persistConfig = {
 	key: 'root',
@@ -18,6 +19,7 @@ const persistConfig = {
 }
 const rootReducer = combineReducers({
 	item: itemSlice,
+	favorite: itemSliceFavorite,
 })
 const persistedReducer = persistReducer(persistConfig, rootReducer)
 export const store = configureStore({
