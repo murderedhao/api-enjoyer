@@ -15,6 +15,9 @@ const MyFavoritePage = () => {
 						alt={`Favorite ${favorite.id}`}
 					/>
 					<p className={styles.container__title}>{favorite.title}</p>
+					<form action='/mycart'>
+						<button className={styles.container__button}>Go to cart</button>
+					</form>
 				</div>
 			))}
 		</div>
